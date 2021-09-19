@@ -28,20 +28,29 @@ void draw() {
   circle(500,250,200);
   circle(500,500,200);
   circle(500,750,200);
+  delay(2000);
   
   if(colorCheck == 1) {
   fill(red);
   circle(500,250,200);
   colorCheck = 2;
-  }
+  }  
   else if(colorCheck == 2) {
+  fill(red);
+  circle(500,250,200);
   fill(yellow);
   circle(500,500,200);
   colorCheck = 3;
   }
   else if(colorCheck == 3) {
-    fill(green);
-    circle(500,750,200);
-    colorCheck = 1;
+  fill(green);
+  circle(500,750,200);
+  colorCheck = 4;
   }
+  else if(colorCheck == 4) {
+  fill(yellow);
+  circle(500,500,200);
+  colorCheck = 1;
+  }
+
 }

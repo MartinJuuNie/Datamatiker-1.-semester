@@ -8,6 +8,7 @@ println(age);
 
 //2.c
 boolean happy = true;
+happy=!happy;
 
 //2.d
 println("Hi, my name is " + name);
